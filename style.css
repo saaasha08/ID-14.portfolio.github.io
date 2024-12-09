@@ -1,0 +1,504 @@
+
+body{
+    background: #000;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+body, p{
+    font-family: "Roboto", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a, button{
+    font-family: "Rubik", sans-serif;
+}
+.mid-content{
+    max-width: 1300px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+/* ----------------------------header css------------------------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    /* position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000;  */
+}
+
+.logo{
+    flex-basis: 40%;
+   
+}
+.logoi{
+    width: 230px;
+}
+
+
+.menu{
+    flex-basis: 60%;
+}
+.menus{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;/
+}
+/* a.active {
+    color: #804ceb;
+} */
+.mitem a{
+    padding: 10px 30px;
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.mitem a:hover{
+    color: #804ceb;
+}
+
+/*---------------------------- banner css------------------------- */
+strong{
+    color: #804ceb;
+}
+.banner{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    /* background-image: url("./image/banneri.png");
+   background-size: cover; */
+}
+.image1{
+    padding-right: 18px;
+    flex-basis: 50%;
+text-align: center;
+}
+
+.image1 img{
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+.text1{
+    color: white;
+    flex-basis: 50%;
+    padding-left: 23px;
+}
+.text1 p{
+   font-size: 18px;
+   line-height: 45px;
+   font-weight: 400;
+  
+    
+}
+.text1 h2{
+    font-size: 45px;
+    line-height: 70px;
+}
+.pink{
+    color: #804ceb;
+}
+.button1{
+    font-weight: 500;
+    padding: 15px 45px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    background-color: #804ceb;
+    color: #ffffff;
+}
+.button1::after{
+content:"";
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 100%;
+background-color: #ffffff;
+z-index: -1;
+transition: .4s;
+border-radius: 5px;
+}
+.button1:hover::after{
+    width: 100%;
+    }
+.button1:hover{
+        color: #804ceb;
+    }
+    /* .fm2{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    /* ---------------------------------------about section------------------ */
+.about-sec{
+        padding: 35px 23px;
+
+    }
+.about-sec h2{
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+}
+.about-sec p{
+   color: #ffffff;
+   font-size: 19px;
+   line-height: 45px;
+   font-weight: 400;
+   text-align: center;
+   margin: 0 15px;
+   padding-bottom: 15px;
+}
+.box-about{
+    padding: 20px 18px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.Abox1{
+    box-shadow: 3px 6px 10px #804ceb;
+    padding: 15px 25px;
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+    border-radius: 5px;
+    width: 300px;
+}
+.Abox1::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #804ceb;
+    z-index: -1;
+    transition: .4s;
+    border-radius: 5px;
+    }
+.Abox1:hover::after{
+    width: 100%;
+    }
+.Abox1:hover{
+        box-shadow: none;
+    }
+/* -----------------------chooseMe---------------------- */
+.chooseMe{
+    padding: 35px 23px;
+}
+.text2{
+   padding: 30px 0;
+}
+.text2 h2{
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+}
+.text2 p{
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 35px;
+}
+.boxC{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+.servicesB{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+   border: 2px solid #804ceb;
+    /* box-shadow: 4px 6px 10px #804ceb; */
+    margin: 40px 0;
+    text-align: center;
+    border-radius: 35px 5px;
+    transition: .4s;
+    box-shadow: 3px 5px 5px;
+}
+.servicesB:hover{
+    border: 2px solid #ffffff;
+  transform: scale(1.1);
+
+}
+
+.servicesB span i{
+    color: #804ceb;
+    font-size: 50px;
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+   
+}
+.servicesB p{
+   width: 400px;
+}
+/*-------------------- what i do -----------------*/
+.servicesB2{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+   border: 1px solid #ffffff;
+    box-shadow: 4px 6px 10px #ffffff;
+    margin: 40px 0;
+    text-align: center;
+    transition: .4s;
+    
+}
+.servicesB2 span i{
+    color: #ffffff;
+    font-size: 50px;
+    background-color: #804ceb;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+.servicesB2 p{
+    width: 400px;
+}
+.servicesB2:hover{
+    color: #ffffff;
+    border: 1px solid #804ceb;
+    box-shadow: 4px 6px 10px #804ceb;
+    transform: scale(1.1);
+}
+/* ...........................how do i work................................. */
+.boxCd{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+.servicesB3{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+   border: 1px solid #ffffff;
+    box-shadow: 4px 6px 10px #ffffff;
+    margin: 40px 20px;
+    text-align: center;
+    transition: .4s;
+    justify-content: space-around;
+    border-radius: 5px 35px;
+}
+.servicesB3 span i{
+    color: #ffffff;
+    font-size: 50px;
+    background-color: #804ceb;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+.servicesB3:hover{
+    color: #ffffff;
+    border: 1px solid #804ceb;
+    box-shadow: 4px 6px 10px #804ceb;
+    /* transform: scale(1.1); */
+}
+/* ..............................testimonial............................. */
+.boxCT{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+.servicesB4{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+   border-left: 1px solid #ffffff;
+    box-shadow: 4px 6px 10px #ffffff;
+    margin: 40px 20px;
+    text-align: center;
+    transition: .4s;
+    justify-content: space-around;
+    border-radius: 35px;
+}
+.servicesB4 span i{
+    color: #ffffff;
+    font-size: 50px;
+    border: 4px double #804ceb;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+.servicesB4:hover{
+    color: #804ceb;
+    border-left: 1px solid #804ceb;
+    box-shadow: 4px 6px 10px #804ceb;
+    /* transform: scale(1.1); */
+}
+/* ..............previous work */
+/* .quick-ban{
+    height: 400px;
+    width: 100%;
+    background-image: url(./image/1\ \(1\).png);
+    background-attachment: fixed;
+    background-color: #814cebab;
+} */
+
+/* ...............previous work......................... */
+.work-gal h2{
+     color: white;
+     padding: 40px;
+     font-size: 45px;
+     text-align: center;
+}
+.work-image{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+.work-image img{
+    width: 50%;
+    height: 50%;
+   
+
+}
+/* .image-work img{
+    transition: 0.4s;
+}
+.image-work img:hover{
+    transform: scale(1.1);
+} */
+/* ..............footer.................. */
+.footers{
+    margin-top: 40px;
+   color: white;
+   text-align: center;
+   padding: 10px 0 10px 0;
+   background-color: #804ceb;
+   
+   width: 100%;
+   font-weight: 500;
+}
+.but-div{
+    text-align: center;
+    margin-top: 30px;
+}
+/* --------------about...........page..................................... */
+.text-me{
+ 
+ padding: 60px 0;
+ color: #ffffff;
+ display: flex;
+ justify-content: space-around;
+ margin: 0 15px;
+}
+.text-m1{
+
+border-right: 1px solid #804ceb;
+padding: 10px 15px;
+}
+/* Contact Page................................................................ */
+.form-create{
+    margin: 50px 100px;
+
+}
+.contactM{
+    color: #ffffff;
+    overflow: hidden;
+
+}
+.contactM h2{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+.mider{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 100%;
+    padding: 14px 0;
+    cursor: pointer;
+    border: 2px solid #804ceb;
+    border-radius: 10px;
+    margin: 10px 0;
+    
+  
+}
+textarea{
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    border: 2px solid #804ceb;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.address{
+    margin-left: 100px;
+    margin-top: 38px;
+
+}
+.iconboxC i{
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.map{
+     margin-top: 40px;
+}
+label{
+    margin: 35px 0;
+}
+.sendsss{
+    width: 100%;
+}
+.sendsss:hover{
+    color: #804ceb;
+
+}
+.social{
+    margin-top: 10px;
+}
+.socialiw{
+    color: #3cff89;
+    font-size: 35px;
+    padding: 10px;
+    /* background-color: #ffffff;
+    border-radius: 5px; */
+}
+.socialil{
+    color: #044e99;
+    font-size: 35px;
+    padding: 10px;
+}
+.socialib{
+    color: #0057ff;
+    font-size: 35px;
+    padding: 10px;
+}
+

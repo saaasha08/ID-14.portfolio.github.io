@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- fonts awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+     <!-- css file -->
+    <link rel="stylesheet" href="./style.css">
+        <title>Form Submission Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            #formOutput {
+                margin-top: 20px;
+                background-color: #f9f9f9;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+         <!-- Header -->
+         <div class="header mid-content">
+
+            <div class="logo">
+                <a href="#home">
+                    <img class="logoi" src="./image/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="menus">
+                     <li class="mitem "><a  href="./index.html">Home</a></li>
+                     <li class="mitem"><a href="./about.html">About</a></li>
+                     <li class="mitem"><a href="./service.html">Services</a></li>
+                     <li class="mitem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+         </div>
+         <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115804.71836448077!2d89.26940290066817!3d24.901479431222455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc548fbaf28cc3%3A0x63ab11a504b2161d!2sBogra%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1733068849845!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         </div>
+      <div class="contactM">
+        <h2>Get In Touch</h2>
+        <div class="">
+        
+            <div class="form-create">
+                <h1>Contact Me</h1>
+                <div class="fm2">
+                 <form id="contactForm" action="/submit" method="POST">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" placeholder="Type Your Name" required><br><br>
+             
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+             
+                     <label for="message">Message:</label>
+                     <textarea id="message" name="message" placeholder="Drop Your Message..." rows="4" required></textarea><br><br>
+             
+                     <button class="button1 sendsss" type="submit">Submit</button>
+                 </form>
+                </div>
+            </div>
+            </div>
+      </div>
+        <div id="formOutput">
+            <!-- Form data will appear here -->
+        </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById('contactForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent form submission
+    
+                    // Fetch form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+    
+                    // Display the data in the formOutput div
+                    const outputDiv = document.getElementById('formOutput');
+                    outputDiv.innerHTML = `
+                        <h2>Submitted Data:</h2>
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <p><strong>Message:</strong> ${message}</p>
+                    `;
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
